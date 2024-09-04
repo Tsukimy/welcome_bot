@@ -29,22 +29,22 @@ For creating bot, telegram has this feature @botfather, Search for botfather and
 
 ## How to launch bot in Hetzner
 HETZNER CONSOLE
-Sign up/in
-Choose console
-Choose to create server with the lowest volume
+1. Sign up/in
+2. Choose console
+3. Choose to create server with the lowest volume
 
-sudo apt-get update
-sudo systemctl enable docker
-sudo apt-get install docker
-sudo apt-get install ca-certificate curl
-sudo install –m 0755 –d /etc/apt/keyrings
-sudo curl …
-sudo chmod a+r /etc/apt/keyrings/docker.asc
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-Sudo usermod –aG docker $USER
-sudo systemctl enable docker
-sudo systemctl start docker
-docker login
-docker pull tsukimy/welcome_bot
-docker run –env api_token=TOKEN –network host –d tsukimy/welcome_bot
+4. sudo apt-get update
+5. sudo systemctl enable docker
+6. sudo apt-get install docker
+7. sudo apt-get install ca-certificate curl
+8. sudo install –m 0755 –d /etc/apt/keyrings
+9. sudo curl … #you can find it in docker tutorial
+10. sudo chmod a+r /etc/apt/keyrings/docker.asc
+11. sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+12. sudo usermod –aG docker $USER
+13. sudo systemctl enable docker
+14. sudo systemctl start docker
+15. docker login
+16. docker pull tsukimy/welcome_bot
+17. docker run –env api_token=TOKEN –network host –d tsukimy/welcome_bot
 
